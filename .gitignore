@@ -1,10 +1,18 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
-
+.DS_Store
+__pycache__/
+# local bundle files
+**/.databricks/*
+.idea
+.vscode
+mlruns
+*.db
+.dbx
+# Exclude local environment directory
+venv
+# Exclude local distribution/packaging directories
+*.egg-info/
+build
+dist
 /.vs/datalakepoc/FileContentIndex
-/.vs/datalakepoc/v17/DocumentLayout.json
-/.vs/datalakepoc/v17/.wsuo
-/.vs/ProjectSettings.json
-/.vs/slnx.sqlite
-/.vs/VSWorkspaceState.json
+/.vs/datalakepoc/v17
+/.vs
