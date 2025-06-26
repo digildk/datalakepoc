@@ -1,6 +1,7 @@
 # This GitHub workflow validates Bundle config (ML resource config and more)
 # defined under my_mlops_project/resources/*
 # and my_mlops_project/databricks.yml, when PRs are merged into the main branch
+
 name: Bundle validation for my_mlops_project
 
 on:
