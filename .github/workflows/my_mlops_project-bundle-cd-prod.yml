@@ -26,7 +26,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: databricks/setup-cli@v0.236.0
+      - name: Debug Host
+        run: |
+          pip uninstall databricks-cli -y
+      - name: Install Databricks CLI v0.257.0
+        run: |
+         curl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | bash -s -- v0.257.0
       - name: Validate Bundle For Prod
         id: validate
         run: |
